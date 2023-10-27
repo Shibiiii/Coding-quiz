@@ -1,8 +1,8 @@
-// some kind of question arrsy
+// some kind of question array
 // object with question and then options array and awnser property
 // {
-//  question: options: [spotify, apple music, physaical media, tidal]
-// amswer: spotify
+//  question: options: [spotify, apple music, physical media, tidal]
+// answer: spotify
 // }
 
 // currentQuestion = 0
