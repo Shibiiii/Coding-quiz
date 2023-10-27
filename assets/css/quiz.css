@@ -1,0 +1,23 @@
+:root {
+    --purple: #602a70;
+    --black: black;
+    --white: white;
+}
+
+.heading {
+    color: var(--black);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.answers {
+    color: var(--purple);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    color: var(--white);
+    background-color: var(--purple);
+}
