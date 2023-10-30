@@ -77,7 +77,22 @@ allQuestions = {
         };
     }
 
-    
+    function addChecker(bool) {
+        
+        var createDiv = document.createElement('div'),
+            txt = document.createTextNode(current + 1);
+
+            createDiv.appendChild(txt);
+
+        if (bool) {
+
+            createDiv.className += 'correct';
+            checker.appendChild(createDiv);
+        } else {
+            createDiv.className += 'false';
+            checker.appendChild(createDiv);
+        }
+    }
 }
 // currentQuestion = 0
 
