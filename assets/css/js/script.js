@@ -4,35 +4,62 @@
 // question: options: [spotify, apple music, physical media, tidal]
 // answer: spotify
 // };
-var question1 = {
-    question1: 'What is the language used for styling a html page',
-    options: [Javascript, CSS, English, Python],
-    answer: 'CSS'
+window.onload = function () {
+
+    var questionArea = document.getElementsByClassName('questions')[0],
+    answerArea   = document.getElementsByClassName('answers')[0],
+    checker      = document.getElementsByClassName('checker')[0],
+    current      = 0,
+
+allQuestions = {
+
+    'What is the language used for styling a html page?':
+    ['Javascript', 'CSS', 'English', 'Python', 1],
+
+    'What does i++ do?':
+    ['Increase a variable by 1', 'Decrease a variable by 1', 'I dont know', 'Adds together two values', 0],
+
+    'Question 3':
+    ['Option1', 'Option2', 'Option3', 'Option4', 2],
+
+    'Question 4':
+    ['Option1', 'Option2', 'Option3', 'Option4', 0],
+
+    'Question 5':
+    ['Option1', 'Option2', 'Option3', 'Option4', 3]
 };
 
-var question2 = {
-    question2: 'Question 2',
-    options: [Option1, Option2, Option3, Option4],
-    answer: 'Option3'
-};
+    function loadQuestion(curr) {
 
-var question3 = {
-    question2: 'Question 3',
-    options: [Option1, Option2, Option3, Option4],
-    answer: 'Option3'
-};
+        var question = Object.keys(allQuestions)[curr];
+        questionArea.textContent = '';
+        questionArea.textContent = question;
+    }
 
-var question4 = {
-    question2: 'Question 4',
-    options: [Option1, Option2, Option3, Option4],
-    answer: 'Option3'
-};
+    function loadAwnser(curr) {
 
-var question5 = {
-    question2: 'Question 5',
-    options: [Option1, Option2, Option3, Option4],
-    answer: 'Option3'
-};
+        var answers = allQuestions[Object.keys(allQuestions)[curr]];\
+
+        answerArea.textContent = '';
+
+        for (var i = 0; i < answers.length -1; i += 1) {
+            var createDiv = document.createElement('div'),
+                text = document.createTextNode(answers[i]);
+
+                createDiv.appendChild(text);
+                createDiv.addEventListener('click', checkAnswer(i, answers));
+
+                answerArea.appendChild(createDiv);
+        }
+    }
+
+    function checkAnswer(i, arr) {
+
+        return function () {
+            
+        }
+    }
+}
 // currentQuestion = 0
 
 // question[currentQuestion].question, question[currentQuestion].answer

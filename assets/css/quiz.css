@@ -4,10 +4,24 @@
     --white: white;
 }
 
-.heading {
+.question {
     color: var(--black);
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quiz {
+    color: var(--black);
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: var(--black);
+    text-align: center;
+    font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
