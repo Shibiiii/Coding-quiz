@@ -38,7 +38,7 @@ allQuestions = {
 
     function loadAwnsers(curr) {
 
-        var answers = allQuestions[Object.keys(allQuestions)[curr]];\
+        var answers = allQuestions[Object.keys(allQuestions)[curr]];
 
         answerArea.textContent = '';
 
@@ -69,7 +69,7 @@ allQuestions = {
                 current += 1;
 
                 loadQuestion(current);
-                loadAwnsers(current):
+                loadAwnsers(current);
             } else {
                 questionArea.textContent = 'Done';
                 answerArea.textContent = '';
@@ -93,7 +93,10 @@ allQuestions = {
             checker.appendChild(createDiv);
         }
     }
-}
+
+    loadQuestion(current);
+    loadAwnsers(current);
+};
 // currentQuestion = 0
 
 // question[currentQuestion].question, question[currentQuestion].answer
