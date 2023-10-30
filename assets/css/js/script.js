@@ -36,7 +36,7 @@ allQuestions = {
         questionArea.textContent = question;
     }
 
-    function loadAwnser(curr) {
+    function loadAwnsers(curr) {
 
         var answers = allQuestions[Object.keys(allQuestions)[curr]];\
 
@@ -56,9 +56,28 @@ allQuestions = {
     function checkAnswer(i, arr) {
 
         return function () {
-            
-        }
+            var givenAnswer = i,
+                correctAnswer = arr[arr.length-1];
+ 
+            if (givenAnswer === correctAnswer) {
+                addChecker(true);
+            } else {
+                addChecker(false);
+            }
+
+            if (current < Object.keys(allQuestions).length -1) {
+                current += 1;
+
+                loadQuestion(current);
+                loadAwnsers(current):
+            } else {
+                questionArea.textContent = 'Done';
+                answerArea.textContent = '';
+            }
+        };
     }
+
+    
 }
 // currentQuestion = 0
 
