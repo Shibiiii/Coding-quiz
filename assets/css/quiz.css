@@ -4,14 +4,14 @@
     --white: white;
 }
 
-.question {
+.questions {
     color: var(--black);
     text-align: center;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.quiz {
+#quiz {
     color: var(--black);
     text-align: center;
     font-size: 35px;
