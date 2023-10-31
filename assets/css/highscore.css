@@ -1,0 +1,31 @@
+:root {
+    --purple: #602a70;
+    --black: black;
+    --white: white;
+}
+
+.header {
+    color: var(--purple);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.heading {
+    color: var(--black);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body {
+    color: var(--black);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    color: var(--white);
+    background-color: var(--purple);
+    
+}
