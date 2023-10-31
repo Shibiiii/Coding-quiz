@@ -96,7 +96,28 @@ allQuestions = {
 
     loadQuestion(current);
     loadAwnsers(current);
+
+    var timeEl = document.querySelector('.time');
+    var timeLeft = 75;
+
+    function setTime() {
+
+        var timerInterval = setInterval(function() {
+            timeLeft--;
+            timeEl.textContent = timeLeft + ' seconds left';
+
+            if(timeLeft === 0) {
+                clearInterval(timerInterval);
+            }
+        }, 1000)
+    }
+
+    setTime()
 };
+
+
+
+
 // currentQuestion = 0
 
 // question[currentQuestion].question, question[currentQuestion].answer
